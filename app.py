@@ -3,7 +3,10 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
+import os
 
+
+port = int(os.environ.get("PORT", 8501))
 st.set_page_config(page_title="CSV Cleaner, Sorter & Visualizer", layout="wide")
 sns.set_theme(style="whitegrid")
 
